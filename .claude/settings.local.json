@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\ndocs(synapser): add comprehensive README with use cases\n\n- Add detailed documentation with 4 concrete use cases:\n  - AI chat app with tool calling\n  - Frontend artifact rendering\n  - Slack bot webhook processing\n  - Minecraft agent with custom artifacts\n- Fix misleading Groq API comment to be provider-agnostic\n- Add dependency info, API reference, and type definitions\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push)"
+    ]
+  }
+}

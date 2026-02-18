@@ -1,0 +1,56 @@
+{
+  "name": "@aid-on/synapser",
+  "version": "0.1.2",
+  "description": "Neural Signal Processing for LLM Agents - Stimulus → Synapse → Response → Signal",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./adapters/mastra": {
+      "import": "./dist/adapters/mastra.js",
+      "types": "./dist/adapters/mastra.d.ts"
+    },
+    "./reporters/artifact": {
+      "import": "./dist/reporters/artifact.js",
+      "types": "./dist/reporters/artifact.d.ts"
+    },
+    "./reporters/sse": {
+      "import": "./dist/reporters/sse.js",
+      "types": "./dist/reporters/sse.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "llm",
+    "agent",
+    "tools",
+    "mastra",
+    "ai"
+  ],
+  "author": "Aid-On",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241230.0",
+    "typescript": "^5.0.0",
+    "vitest": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@mastra/core": "^0.10.0"
+  },
+  "peerDependenciesMeta": {
+    "@mastra/core": {
+      "optional": true
+    }
+  }
+}
