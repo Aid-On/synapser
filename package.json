@@ -43,7 +43,7 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20241230.0",
     "typescript": "^5.0.0",
-    "vitest": "^2.0.0"
+    "vitest": "^4.1.11"
   },
   "peerDependencies": {
     "@mastra/core": "^0.10.0"
@@ -52,5 +52,11 @@
     "@mastra/core": {
       "optional": true
     }
+  },
+  "overrides": {
+    "esbuild@0.21.5": "~0.25.0",
+    "@vitest/mocker@2.1.9": "^4.1.11",
+    "vite@5.4.21": "^6.4.3",
+    "tinypool@1.1.1": "^2.1.2"
   }
 }
